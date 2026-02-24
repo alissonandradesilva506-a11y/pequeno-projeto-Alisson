@@ -1,0 +1,26 @@
+public class Jogo {
+    String nome;
+    String genero;
+    float preco;
+    
+    public void detalharAtributos(){
+    System.out.println("Nome: " + nome);
+    System.out.println("Gênero: " + genero);
+    System.out.println("Preço: " + preco);
+    }
+    public static void jogo(String[] args){
+        Jogo jogo1= new Jogo();
+        Jogo jogo2= new Jogo();
+        jogo1.nome = ("Hades");
+        jogo1.genero = ("Rogue-lite");
+        jogo1.preco = (float) (73.99) ;
+        jogo2.nome = ("Hollow Knight");
+        jogo2.genero = ("MetroidVania");
+        jogo2.preco = (float) (46.99) ;
+        System.out.println("--- Detalhes do 1º Jogo ---");
+        jogo1.detalharAtributos();
+
+        System.out.println("\n--- Detalhes do 2º Jogo ---");
+        jogo2.detalharAtributos();
+    }
+}
